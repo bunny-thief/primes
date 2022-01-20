@@ -32,3 +32,13 @@ def find_next_prime(number):
         return number
 
     return find_next_prime(number + 1)
+
+def find_previous_prime(number):
+    """Given a `number` the function returns the previous prime number
+
+    :param number: int - find previous prime before `number`.
+    :return: int - previous prime number before `number`.
+    """
+
+    pass
+
