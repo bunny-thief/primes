@@ -21,6 +21,7 @@ def isPrime(number):
 
     return True
 
+
 def find_next_prime(number):
     """Given a `number` the function returns the next prime number
 
@@ -33,6 +34,7 @@ def find_next_prime(number):
 
     return find_next_prime(number + 1)
 
+
 def find_previous_prime(number):
     """Given a `number` the function returns the previous prime number
 
@@ -40,5 +42,8 @@ def find_previous_prime(number):
     :return: int - previous prime number before `number`.
     """
 
-    pass
+    if isPrime(number):
+        return number
+
+    return find_previous_prime(number - 1)
 
