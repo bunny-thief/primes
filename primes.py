@@ -21,4 +21,11 @@ def isPrime(number):
 
     return True
 
-print(isPrime(4))
+def find_next_prime(number):
+    """Given a `number` the function returns the next prime number
+
+    :param number: int - find next prime after `number`.
+    :return: int - next prime number after `number`.
+    """
+
+    pass
