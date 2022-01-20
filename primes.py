@@ -28,4 +28,7 @@ def find_next_prime(number):
     :return: int - next prime number after `number`.
     """
 
-    pass
+    if isPrime(number):
+        return number
+
+    return find_next_prime(number + 1)
