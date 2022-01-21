@@ -57,4 +57,11 @@ def primes_list(start_number, end_number):
     :return: list - returns a list of prime numbers found between `start_number` and `end_number`.
     """
 
-    pass
+    prime_numbers = []
+
+    for number in range(start_number, end_number + 1):
+        if isPrime(number):
+            prime_numbers.append(number)
+
+    return prime_numbers
+
