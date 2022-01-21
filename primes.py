@@ -47,3 +47,14 @@ def find_previous_prime(number):
 
     return find_previous_prime(number - 1)
 
+
+def primes_list(start_number, end_number):
+    """
+
+    :param start_number: int - begin search for prime numbers at `start_number`
+
+    :param end_number: int - end search for prime numbers at and including `end_number`.
+    :return: list - returns a list of prime numbers found between `start_number` and `end_number`.
+    """
+
+    pass

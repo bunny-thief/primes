@@ -1,5 +1,5 @@
 import unittest
-from primes import isPrime, find_next_prime, find_previous_prime
+from primes import isPrime, find_next_prime, find_previous_prime, primes_list
 
 class IsPrimeTestCase(unittest.TestCase):
     """Test for isPrime function"""
@@ -233,6 +233,67 @@ class IsPrimeTestCase(unittest.TestCase):
         previous_prime_16 = find_previous_prime(16)
         self.assertNotEqual(previous_prime_16, 14)
 
+        """Test for primes_list function"""
+
+    def test_primes_list_2_10(self):
+        """return primes between 2 and 10"""
+        primes_2_10 = primes_list(2, 10)
+        self.assertEqual(primes_2_10, [2, 3, 5, 7])
+
+    def test_primes_list_2_10(self):
+        """return primes between 2 and 10"""
+        primes_2_10 = primes_list(2, 10)
+        self.assertEqual(primes_2_10, [2, 3, 5, 7])
+
+    def test_primes_list_11_20(self):
+        """return primes between 11 and 20"""
+        primes_11_20 = primes_list(11, 20)
+        self.assertEqual(primes_11_20, [11, 13, 17, 19])
+
+    def test_primes_list_21_30(self):
+        """return primes between 21 and 30"""
+        primes_21_30 = primes_list(21, 30)
+        self.assertEqual(primes_21_30, [23, 29])
+
+    def test_primes_list_31_40(self):
+        """return primes between 31 and 40"""
+        primes_31_40 = primes_list(31, 40)
+        self.assertEqual(primes_31_40, [31, 37])
+
+    def test_primes_list_2_10_not_equal_1(self):
+        """return primes between 2 and 10"""
+        primes_2_10 = primes_list(2, 10)
+        self.assertNotEqual(primes_2_10, [2, 3, 4, 5, 6, 7, 8, 9, 10])
+
+    def test_primes_list_2_10_not_equal_2(self):
+        """return primes between 2 and 10"""
+        primes_2_10 = primes_list(2, 10)
+        self.assertNotEqual(primes_2_10, [2, 3, 4, 5, 6, 7, 8, 9])
+
+    def test_primes_list_2_10_not_equal_3(self):
+        """return primes between 2 and 10"""
+        primes_2_10 = primes_list(2, 10)
+        self.assertNotEqual(primes_2_10, [2, 3, 4, 5, 7])
+
+    def test_primes_list_2_10_not_equal_4(self):
+        """return primes between 2 and 10"""
+        primes_2_10 = primes_list(2, 10)
+        self.assertNotEqual(primes_2_10, [2, 3, 5, 6, 7])
+
+    def test_primes_list_2_10_not_equal_5(self):
+        """return primes between 2 and 10"""
+        primes_2_10 = primes_list(2, 10)
+        self.assertNotEqual(primes_2_10, [2, 3, 5, 7, 8])
+
+    def test_primes_list_2_10_not_equal_6(self):
+        """return primes between 2 and 10"""
+        primes_2_10 = primes_list(2, 10)
+        self.assertNotEqual(primes_2_10, [2, 3, 5, 7, 9])
+
+    def test_primes_list_2_10_not_equal_7(self):
+        """return primes between 2 and 10"""
+        primes_2_10 = primes_list(2, 10)
+        self.assertNotEqual(primes_2_10, [2, 3, 5, 7, 10])
 
 if __name__ == '__main__':
     unittest.main()
